@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Decodificador Texto</title>
+    <link rel="stylesheet" href="./style.css"
+  </head>
+  <body>
+    <header class="cabecalho">
+      <img src="./img/logo-alura.png" alt="Logo Alura" />
+    </header>
+    <main class="apresentacao">
+      <section class="apresentacao_esquerda">
+        <textarea
+          id="input-texto"
+          class="insercao_texto"
+          placeholder="Digite seu texto aqui..."
+        ></textarea>
+        <p class="mensagem_observacao">
+          <img src="./img/!-1.png" alt="Ponto de Exclamação" />
+          ATENÇÃO: Apenas letras minúsculas e sem acento.
+        </p>
+        <div class="botoes">
+          <button onclick="criptografar()" class="botao_acao">
+            Criptografar
+          </button>
+          <button onclick="descriptografar()" class="botao_acao">
+            Descriptografar
+          </button>
+        </div>
+      </section>
+      <div id="output" class="apresentacao_direita">
+        <img
+          class="apresent_imagem"
+          src="./img/desenho-1.png"
+          alt="desenho de um boneco curioso"
+        />
+        <h1 class="texto_nao_encontrado">Nenhuma mensagem encontrada!</h1>
+        <span class="texto_digite_texto"
+          >Digite um texto que você deseja criptografar ou
+          descriptografar.</span
+        >
+      </div>
+    </main>
+    <footer class="rodape">
+      <p>Desenvolvido por Pedro Vaz Neto!</p>
+    </footer>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>
